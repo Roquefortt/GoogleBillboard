@@ -22,10 +22,10 @@ public boolean isPrime(double dNum)
 {   
     if(dNum < 2)
     	return false; 
-  	else if(dNum == 2)
+    else if(dNum == 2)
     	return true;   
-	for(int i = 2; i <= Math.sqrt(dNum); i++)
-	    if(dNum%i == 0)
-	      	return false; 
+    for(int i = 2; i <= Math.sqrt(dNum); i++)
+	if(dNum%i == 0)
+		return false; 
     return true;  
 } 
